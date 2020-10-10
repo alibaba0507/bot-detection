@@ -16,10 +16,10 @@
 	<script src="https://bot-detect-1.herokuapp.com/bot-detect.php"></script>
 	*/
 	if ($browser->isBot()){
-	  echo "isBot({1});";
+	  echo "isBot({name:1});";
 	} else
 	{
-		echo "isBot({0});";
+		echo "isBot({name:0});";
 	}
 	die();
 ?>   
