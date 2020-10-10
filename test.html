@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--!DOCTYPE html>
 <html lang="en">
 <head>
  <script src="bot-detect.js"></script>
@@ -13,4 +13,28 @@
  document.getElementById("info").textContent= data;
  });
  </script>
-</body>
+</body -->
+
+<script>
+ var checkBot = -1;
+  function isBot(data){ 
+  //document.getElementById("info").textContent= data.name;
+   checkBot = data.name;
+ };
+
+  window.addEventListener("load", function(){
+    if (checkBot == '0' || checkBot == 0)
+   {
+   //  alert(">>>> [" + checkBot + "][" + document.getElementById("spin") + "]>>>>");
+     document.getElementById("spin").style.display = "none"; 
+     document.getElementById("original").style.display = "block";
+   }else
+   {
+      document.getElementById("spin").style.display = "block"; 
+      document.getElementById("original").style.display = "none";
+   }
+});
+ 
+ </script>
+ <script src="/bot-detect.php"></script>
+<!-- script src="https://bot-detect-1.herokuapp.com/bot-detect.php"></script -->
