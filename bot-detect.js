@@ -34,7 +34,7 @@ function isBot(callback){
     // Ready state 4 means the request is done
     if(xhr.readyState == 4){
       // 200 is a successful return
-       alert("XMLHttpRequest PHP [" + xhr.responseText + "]>>>");
+    //   alert("XMLHttpRequest PHP [" + xhr.responseText + "]>>>");
 	  if(xhr.status == 200){
         callback(xhr.responseText.trim()); // 'This is the returned text.'
       }else{
