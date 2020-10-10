@@ -5,10 +5,10 @@
 	use hisorange\BrowserDetect\Parser as Browser;
 	$browser = new Browser;
 	if ($browser->isBot()){
-	  echo 1;
+	  echo "isBot({name:1});";
 	} else
 	{
-		echo 0;
+		echo "isBot({name:0});";
 	}
 	die();
 ?>   
