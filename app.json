@@ -1,0 +1,26 @@
+{
+  "name": "PHP Synonym Finder",
+  "description": "JS for bot detection",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "PHP"
+  ],
+  "repository": "https://github.com/alibaba0507/synonyms",
+  "success_url": "/bot-detect.js",
+  "image": "heroku/php",
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-php"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "tests"
+      }
+    }
+  }
+}
